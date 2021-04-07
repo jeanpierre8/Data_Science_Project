@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="PAY_3 <= 0.5\ngini = 0.3\nsamples = 13236\nvalue = [16261, 4739]"] ;
+1 [label="PAY_0 <= 1.5\ngini = 0.3\nsamples = 11384\nvalue = [14864, 3147]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="PAY_AMT3 <= -0.2\ngini = 0.3\nsamples = 10797\nvalue = [14578, 2520]"] ;
+1 -> 2 ;
+3 [label="gini = 0.3\nsamples = 3231\nvalue = [4001, 1106]"] ;
+2 -> 3 ;
+4 [label="gini = 0.2\nsamples = 7566\nvalue = [10577, 1414]"] ;
+2 -> 4 ;
+5 [label="PAY_6 <= -0.5\ngini = 0.4\nsamples = 587\nvalue = [286, 627]"] ;
+1 -> 5 ;
+6 [label="gini = 0.5\nsamples = 96\nvalue = [66, 76]"] ;
+5 -> 6 ;
+7 [label="gini = 0.4\nsamples = 491\nvalue = [220, 551]"] ;
+5 -> 7 ;
+8 [label="PAY_2 <= 0.5\ngini = 0.5\nsamples = 1852\nvalue = [1397, 1592]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="BILL_AMT3 <= 0.4\ngini = 0.4\nsamples = 546\nvalue = [609, 307]"] ;
+8 -> 9 ;
+10 [label="gini = 0.5\nsamples = 404\nvalue = [435, 240]"] ;
+9 -> 10 ;
+11 [label="gini = 0.4\nsamples = 142\nvalue = [174, 67]"] ;
+9 -> 11 ;
+12 [label="PAY_5 <= 1.0\ngini = 0.5\nsamples = 1306\nvalue = [788, 1285]"] ;
+8 -> 12 ;
+13 [label="gini = 0.5\nsamples = 567\nvalue = [387, 505]"] ;
+12 -> 13 ;
+14 [label="gini = 0.4\nsamples = 739\nvalue = [401, 780]"] ;
+12 -> 14 ;
+}
